@@ -19,6 +19,9 @@
 
      cursor: pointer;
   }
+  &__btn-menu{
+     display: none;
+  }
 }
 
 .logo{
@@ -26,12 +29,14 @@
 }
 
 .menu{
-   padding: 0 60px 0 35px;
+   padding-right: 15px;
    &__list{
       display: flex;
    }
+
    &__list-item + .menu__list-item{
-      padding-left: 80px;
+      padding-right: 45px;
+      padding-left: 35px;
    }
    &__list-link{
       @extend %title-font;
@@ -267,9 +272,16 @@
    z-index: 5;
    &__list{
       display: flex;
+      overflow-x: auto;
+   }
+   &__item{
+      position: relative;
+      padding-right: 8px;
    }
    &__item::after{
       content: '/';
+      position: absolute;
+
       &:hover::after{
             background-color: rgba(0, 0, 0, 0.903); 
       }
@@ -771,6 +783,9 @@
 .map{
    margin-top: -53px;
    margin-bottom: 50px;
+   iframe{
+      height: 580px;
+   }
 }
 
 /*  CONTACT PAGE*/
@@ -901,7 +916,7 @@
       bottom: 0;
       transition: all 0.3s ease;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       background-color: rgba(#fff,0.6);
       line-height: 22px;
@@ -1346,3 +1361,5 @@
    }
 }
 
+
+@import 'media';

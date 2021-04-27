@@ -10,13 +10,15 @@ body{
 	line-height: 27px;
 	color: $default;
 	overflow-x: hidden;
-	min-width: 320px;
+	min-width: 300px;
+
 }
 
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 
 .main {
