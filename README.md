@@ -9,4 +9,4 @@ npx gulp build - to build a production version
 
 watch on:
 
-https://mike-makaryshyn.github.io/desireProd/ 
+https://mike-makaryshyn.github.io/furnitureProd/
